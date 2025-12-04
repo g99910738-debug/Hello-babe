@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Eternal Love: 50 Reasons Why I Love My Buttercup! 💘</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles & Romantic Theme */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            /* UPDATED: Softer, Lighter Pink/Peach Gradient */
+            background: linear-gradient(135deg, #FFDDE1 0%, #FFCAD4 100%); /* Light Pink to Light Rose */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Animated Hearts Background Effect */
+        .couple-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .heart {
+            position: absolute;
+            font-size: 3em;
+            color: #d81b60;
+            animation: floatHeart 15s infinite ease-in-out;
+            opacity: 0.8;
+            transform: scale(0);
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(100vh) scale(0); opacity: 0; }
+            50% { opacity: 0.9; transform: scale(1); }
+            100% { transform: translateY(-20vh) scale(1.2); opacity: 0; }
+        }
+        
+        /* Container */
+        .container {
+            width: 95%;
+            max-width: 800px;
+            height: 90%;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Page/Section Styles */
+        .page {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* UPDATED: Transition for smoother fade and slide */
+            transition: transform 0.6s ease-out, opacity 0.5s ease-out;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+        }
+        
+        .page.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .page:not(.active) {
+            transform: translateX(100%);
+            pointer-events: none;
+        }
+
+        /* Heading, Button, Grid Styles (Same as before) */
+        h1, h2 { font-family: 'Dancing Script', cursive; color: #880e4f; margin-bottom: 15px; text-shadow: 1px 1px 0 #ffcdd2; }
+        h1 { font-size: 4.5em; }
+        h2 { font-size: 2.8em; }
+        
+        .nav-button { background-color: #e91e63; color: white; border: none; padding: 15px 35px; font-size: 1.5em; font-family: 'Quicksand', sans-serif; border-radius: 50px; cursor: pointer; margin: 10px; transition: all 0.2s; box-shadow: 0 4px 10px rgba(136, 14, 79, 0.5); }
+        .nav-button:hover { background-color: #d81b60; transform: scale(1.05); }
+
+        #page4 { background-color: #fff0f5; }
+        .reasons-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 8px; width: 100%; padding: 15px 0; }
+        .reason-item { background-color: #ffcdd2; color: #333; padding: 12px 8px; border-radius: 10px; font-size: 1em; font-weight: bold; box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); cursor: pointer; transition: all 0.2s; height: 80px; display: flex; align-items: center; justify-content: center; text-align: center; border: 2px solid #e91e63; position: relative; overflow: hidden; }
+        .reason-item:hover { background-color: #ffab91; transform: translateY(-2px); }
+        
+        .reason-text { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(255, 255, 255, 0.95); color: #880e4f; display: flex; align-items: center; justify-content: center; padding: 5px; font-size: 0.9em; transform: translateY(100%); transition: transform 0.4s ease-out; font-family: 'Dancing Script', cursive; font-weight: 700; }
+        .reason-item.revealed .reason-text { transform: translateY(0); }
+        .reason-number { font-size: 1.5em; color: #d81b60; }
+
+        /* Content Animation (BounceIn) - Kept for the content inside the pages */
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .page.active > * {
+            animation: bounceIn 0.8s ease-out both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="couple-animation">
+        <div class="heart" style="left: 10%; animation-duration: 12s;">❤️</div>
+        <div class="heart" style="left: 30%; animation-duration: 8s; animation-delay: 2s;">💖</div>
+        <div class="heart" style="left: 50%; animation-duration: 15s; animation-delay: 5s;">💘</div>
+        <div class="heart" style="left: 70%; animation-duration: 10s; animation-delay: 1s;">❤️</div>
+        <div class="heart" style="left: 90%; animation-duration: 13s; animation-delay: 4s;">💖</div>
+    </div>
+
+    <div class="container">
+        <div class="page active" id="page1">
+            <h1 style="animation-delay: 0.1s;">Only For My <span class="nickname">Buttercup</span> 🐻</h1>
+            <p style="font-size: 1.5em; animation-delay: 0.3s;">
+                A place for endless love, apologies, and the promise of a future together. I love you, meri jaan!
+            </p>
+            <p style="font-style: italic; font-size: 1.2em; animation-delay: 0.5s;">
+                Click **OPEN MY HEART** to start this journey. 🔑
+            </p>
+            <button class="nav-button" onclick="showPage(2)" style="animation-delay: 0.7s;">
+                OPEN MY HEART 💘
+            </button>
+        </div>
+
+        <div class="page" id="page2">
+            <h2 style="animation-delay: 0.1s;">A Deep, Honest 'Sorry' ❤️‍🩹</h2>
+            <p style="text-align: justify; animation-delay: 0.3s;">
+                My sweetest **Buttercup**, I am truly sorry for my mistakes. My overthinking and emotional slip-ups often create misunderstandings, and I end up **hurting you indirectly**. Please know that was never my intention. **Woh dard mujhe bhi hota hai** (that pain hurts me too).
+            </p>
+            <p style="text-align: center; font-weight: bold; font-size: 1.4em; color: #880e4f; animation-delay: 0.5s;">
+                **Our Promise: Together We Fight!** From today, no matter the issue, we face it as a team. Always **Us vs the Problem!** We are meant to be. 💍
+            </p>
+            <button class="nav-button" onclick="showPage(3)" style="animation-delay: 0.7s;">
+                Next: Why I Love You (Short List) 🥰
+            </button>
+        </div>
+
+        <div class="page" id="page3">
+            <h2 style="animation-delay: 0.1s;">My Favourites About My Man! ✨</h2>
+            <p style="font-size: 1.4em; animation-delay: 0.3s;">
+                I love you without any reason. But still, there are some cute little things:
+            </p>
+            <ul style="text-align: left; list-style-type: '👑 '; margin-left: 15%; animation-delay: 0.5s; font-size: 1.2em;">
+                <li>**The Scolding:** Because I know it comes from a place of huge care!</li>
+                <li>**Your Talks:** You are my best friend. Talking to you fixes everything.</li>
+                <li>**Your Habits:** Everything—your focus, your smile, the way you hug me tight!</li>
+                <li>**18th March:** My favourite day ever! 🗓️</li>
+            </ul>
+            <button class="nav-button" onclick="showPage(4)" style="animation-delay: 0.7s;">
+                Next: 50 Reasons Why I Love YOU! 🤯
+            </button>
+        </div>
+        
+        <div class="page" id="page4">
+            <h2 style="margin-top: 10px; animation-delay: 0.1s;">50 Reasons Locked with Love! 🔒</h2>
+            <p style="font-size: 1.1em; animation-delay: 0.3s;">
+                Tap on each box to unlock a reason why I love you so much! Each tap is a little secret shared. 😉
+            </p>
+            <div class="reasons-grid" style="animation-delay: 0.5s;">
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">1</span><div class="reason-text">Your Eyes (They always tell me the truth) 👀</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">2</span><div class="reason-text">Your Lips when you smile (They make my day) 😊</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">3</span><div class="reason-text">The way you make me comfortable (I can be myself) 😌</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">4</span><div class="reason-text">Your big, warm hugs (My favorite place) 🤗</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">5</span><div class="reason-text">Your cute angry face (It means you care) 😠</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">6</span><div class="reason-text">The way you care for me (My personal bodyguard) 🛡️</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">7</span><div class="reason-text">Your honesty (It builds our foundation) 🤝</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">8</span><div class="reason-text">Your intelligence (You teach me so much) 🧠</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">9</span><div class="reason-text">The sound of your laugh (It's my favorite song) 🎶</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">10</span><div class="reason-text">Your protective nature (My knight in shining armor) 👑</div></div>
+                
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">11</span><div class="reason-text">The way you hold my hand (It feels like home) 🏡</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">12</span><div class="reason-text">Your deep voice (It calms my soul) 🎤</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">13</span><div class="reason-text">The silly jokes you make (Even the bad ones!) 😂</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">14</span><div class="reason-text">Your dedication to your work (My inspiration) 💪</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">15</span><div class="reason-text">Your calm behaviour (You are my anchor) ⚓</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">16</span><div class="reason-text">The way you remember small details (My heart melts) 🥰</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">17</span><div class="reason-text">You are my best listener (You truly hear me)👂</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">18</span><div class="reason-text">Your beautiful soul (Pure at heart) ✨</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">19</span><div class="reason-text">The quiet moments with you (No words needed) 🤫</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">20</span><div class="reason-text">**I love your scolding** (Tumhara datna - My favorite sound!) 📢</div></div>
+
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">21</span><div class="reason-text">You inspire me daily (To be a better person) 🚀</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">22</span><div class="reason-text">Your patience with me (I know I need it!) 🙏</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">23</span><div class="reason-text">The way you look at me (With so much love) 😍</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">24</span><div class="reason-text">Your kindness to others (My gentle giant) 😇</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">25</span><div class="reason-text">You are always my safe place (My shelter) ☂️</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">26</span><div class="reason-text">Your cute nose! (It's just perfect!) 👃</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">27</span><div class="reason-text">Your sense of humour (You make me laugh) 😂</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">28</span><div class="reason-text">You make me feel beautiful (Inside and out) 👸</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">29</span><div class="reason-text">The way you say 'I love you' (It's magic) ✨</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">30</span><div class="reason-text">Our late-night talks (Best part of the day) 🌙</div></div>
+
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">31</span><div class="reason-text">Your strong determination (Nothing stops you) 🎯</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">32</span><div class="reason-text">The way you handle stress (So calm!) 🧘</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">33</span><div class="reason-text">You are perfectly imperfect (My weirdo!) 🤪</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">34</span><div class="reason-text">Your morning texts ☀️ (Best alarm clock)</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">35</span><div class="reason-text">Your belief in 'Us' (My biggest cheerleader) 📣</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">36</span><div class="reason-text">You bring me peace (My happy pill) 💖</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">37</span><div class="reason-text">Your cute walking style (Mera bandar!) 🐒</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">38</span><div class="reason-text">Your wisdom (My life guru) 💡</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">39</span><div class="reason-text">The way you manage things (My Captain) 👨‍✈️</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">40</span><div class="reason-text">The thought of your name (It makes me smile) 😊</div></div>
+
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">41</span><div class="reason-text">You are my home 🏠 (The safest place on Earth)</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">42</span><div class="reason-text">Your random acts of service (My little helper) 🛠️</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">43</span><div class="reason-text">The adventures we share (So much fun!) 🗺️</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">44</span><div class="reason-text">Your ability to forgive (You are an angel) 😇</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">45</span><div class="reason-text">Your confidence (I love that energy) 🔥</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">46</span><div class="reason-text">**Mera Saara Pyaar** (I'm yours entirely) 💍</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">47</span><div class="reason-text">You are the best partner (Better than I deserve) 🏆</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">48</span><div class="reason-text">The future I see with you (It's bright!) 💡</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">49</span><div class="reason-text">You complete me (I am whole with you) 🧩</div></div>
+                <div class="reason-item" onclick="revealReason(this)"><span class="reason-number">50</span><div class="reason-text">**Because you are my Buttercup!** (And I love my Buttercup!) 🐻</div></div>
+            </div>
+            <button class="nav-button" onclick="showPage(5)">
+                Next: Our Forever Plan! 🏡
+            </button>
+        </div>
+
+        <div class="page" id="page5">
+            <h2 style="animation-delay: 0.1s;">Our Forever Plan! 💍</h2>
+            <p style="font-size: 1.5em; animation-delay: 0.3s;">
+                I dream of waking up next to you every single day. We will have a cozy little home where we fight silly battles over the TV remote, and then make up with extra tight hugs!
+            </p>
+            <p style="font-weight: bold; font-size: 1.6em; color: #880e4f; animation-delay: 0.5s;">
+                Life is best when it's messy, funny, and spent entirely with you. **I Love You, Forever is a promise!**
+            </p>
+            <p style="font-style: italic; margin-top: 20px; animation-delay: 0.7s;">
+                "Har baar jab main galti karti hoon, I promise to hold your hand and say: Hum milkar theek karenge."
+            </p>
+            <button class="nav-button" onclick="showPage(1)" style="background-color: #ff99c8; animation-delay: 0.9s;">
+                Start the Love Loop Again! 🔄
+            </button>
+        </div>
+        
+    </div>
+
+    <script>
+        // JavaScript for Page Transitions (Updated for smooth effect)
+        const pages = document.querySelectorAll('.page');
+        
+        function showPage(pageNumber) {
+            pages.forEach((page, index) => {
+                page.classList.remove('active');
+                
+                // Set the non-active pages off-screen
+                if (index + 1 < pageNumber) {
+                    page.style.transform = 'translateX(-100%)';
+                } else if (index + 1 > pageNumber) {
+                    page.style.transform = 'translateX(100%)';
+                } else {
+                    // Make the current page visible and active
+                    page.style.transform = 'translateX(0)';
+                    page.classList.add('active');
+                    page.scrollTop = 0; 
+                }
+            });
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage(1);
+        });
+
+        // JavaScript for the Interactive Reveal Boxes (Same as before)
+        function revealReason(box) {
+            // Toggle the 'revealed' class
+            box.classList.toggle('revealed');
+        }
+    </script>
+</body>
+</html>
